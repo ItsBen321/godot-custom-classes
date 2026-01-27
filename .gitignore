@@ -2,9 +2,8 @@
 .godot/
 /android/
 
-.import
-.project
+*.import
+*.project
 .editorconfig
 addons/
-
 
