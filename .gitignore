@@ -4,6 +4,7 @@
 
 .import
 .project
+.editorconfig
 addons/
 
 
