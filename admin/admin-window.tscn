@@ -27,7 +27,6 @@ layout_mode = 2
 
 [node name="CodeEdit" type="CodeEdit" parent="Control/HSplitContainer" unique_id=1602214023]
 layout_mode = 2
-text = "xtends Node"
 wrap_mode = 1
 indent_wrapped_lines = true
 caret_type = 1

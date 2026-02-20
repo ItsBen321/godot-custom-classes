@@ -57,13 +57,13 @@ static func _init_popup_deconstruct(root: Window) -> VBoxContainer:
 	window.size = Vector2i(400,600)
 	window.title = "Deconstruct"
 	window.close_requested.connect(func(): window.queue_free())
-	
+
 	var scroll_container = ScrollContainer.new()
 	scroll_container.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
 	scroll_container.set_anchors_preset(Control.PRESET_FULL_RECT)
 	window.add_child(scroll_container)
 	var vbox: VBoxContainer = _add_vbox(scroll_container)
-	
+
 	root.add_child.call_deferred(window)
 	return vbox
 
@@ -98,7 +98,7 @@ static func _deconstruct_dict(dict, layers, parent: Node = null):
 	if layers <= 0: return
 	offset += 1
 	layers -= 1
-	
+
 	for item in dict.keys():
 		var the_type: int = _check_array(dict[item])
 		match the_type:
@@ -133,7 +133,7 @@ static func _deconstruct_array(array, layers, parent: Node = null):
 	if layers <= 0: return
 	offset += 1
 	layers -= 1
-	
+
 	for item in array:
 		var the_type: int = _check_array(item)
 		match the_type:
